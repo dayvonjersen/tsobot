@@ -17,7 +17,7 @@ func wttr(loc string, freedom bool) string {
 		if freedom {
 			return ""
 		}
-		return "&m"
+		return "&u"
 	}())
 	checkErr(err)
 	if resp.StatusCode != 200 {
